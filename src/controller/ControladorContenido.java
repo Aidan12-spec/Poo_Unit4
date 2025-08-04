@@ -37,7 +37,7 @@ public class ControladorContenido {
 
     public void mostrarContenidos() {
         if (listaContenidos.isEmpty()) {
-            vista.mostrarMensaje("No hay contenidos para mostrar.");
+            vista.mostrarMensaje("No hay contenido disponible para mostrar.");
         } else {
             vista.mostrarContenidos(listaContenidos);
         }
