@@ -22,17 +22,17 @@ public class ControladorContenido {
     public void cargarContenidosDesdeArchivo(String ruta) {
         List<ContenidoAudioVisual> contenidosCargados = ArchivoContenidoAV.leerContenidosDesdeArchivo(ruta);
         if (contenidosCargados.isEmpty()) {
-            vista.mostrarMensaje("No se cargaron contenidos o el archivo está vacío.");
+            vista.mostrarMensaje("No se pudo cargar el contenidos o el archivo está vacío.");
         } else {
             listaContenidos.clear();
             listaContenidos.addAll(contenidosCargados);
-            vista.mostrarMensaje("Contenidos cargados exitosamente.");
+            vista.mostrarMensaje("El contenidos se ha cargado exitosamente.");
         }
     }
 
     public void guardarContenidosEnArchivo(String ruta) {
         ArchivoContenidoAV.guardarContenidosEnArchivo(listaContenidos, ruta);
-        vista.mostrarMensaje("Contenidos guardados exitosamente.");
+        vista.mostrarMensaje("El contenidos se ha guardado exitosamente.");
     }
 
     public void mostrarContenidos() {
@@ -45,7 +45,8 @@ public class ControladorContenido {
 
     public void agregarContenido(ContenidoAudioVisual contenido){
         listaContenidos.add(contenido);
-        vista.mostrarMensaje("Contenido agregado correctamente.");
+        vista.mostrarMensaje("El contenido ha sido agregado correctamente.");
     }
 
 }
+  
