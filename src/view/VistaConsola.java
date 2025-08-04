@@ -34,13 +34,13 @@ public class VistaConsola {
             switch (opcion) {
                 case 1:
                 	System.out.println();
-                    System.out.print("Ingrese ruta archivo para cargar: ");
+                    System.out.print("Ingrese la ruta del archivo para cargar: ");
                     String ruta = scanner.nextLine();
                     controlador.cargarContenidosDesdeArchivo(ruta);
                     break;
                 case 2:
                 	System.out.println();
-                    System.out.print("Ingrese ruta archivo para guardar: ");
+                    System.out.print("Ingrese la ruta del archivo para guardar: ");
                     String rutaGuardar = scanner.nextLine();
                     controlador.guardarContenidosEnArchivo(rutaGuardar);
                     break;
@@ -54,7 +54,7 @@ public class VistaConsola {
                     break;
                 case 0:
                 	System.out.println();
-                    System.out.println("		Saliendo...");
+                    System.out.println("		     Saliendo...");
                     System.out.println("-------------------- Usted ha salido del programa --------------------");
                     break;
                 default:
